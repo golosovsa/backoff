@@ -17,7 +17,7 @@ repos:
     rev: 6.1.0
     hooks:
       - id: flake8
-        args: [ --toml-config=./docker_compose/pyproject.toml ]
+        args: [ --toml-config=./pyproject.toml ]
         additional_dependencies:
           - Flake8-pyproject
           - bandit
@@ -30,4 +30,4 @@ repos:
     rev: v1.5.1
     hooks:
       - id: mypy
-        args: [ --strict, --ignore-missing-imports, "--config-file=./docker_compose/pyproject.toml" ]
+        args: [ --strict, --ignore-missing-imports, "--config-file=./pyproject.toml" ]
