@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "backoff"
+version = "0.1.0"
+description = ""
+authors = ["grm <golosov_SA@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+python_version = "3.10"
+format = "wemake"
+ignore = ['D100', 'D101', 'D102', 'D103', 'D104', 'D105', 'D106', 'D107']
+max-line-length = 119
+max-string-usages = 8
+
+[tool.mypy]
+python_version = "3.10"
+
+[tool.isort]
+multi_line_output = 3
+line_length = 119
+include_trailing_comma = true
